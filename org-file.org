@@ -1,15 +1,15 @@
 * Levels of heading
-# regular text
+# comment text in org
 * h1
 ** h2 
 *** h3 
-**** h4
-***** h5
-****** h6
-******* h7
-******** h8
-********* h9
-
+**** h4 
+***** h5 
+****** h6 
+******* h7 
+******** h8 
+********* h9 
+Org comments (start with # on a newline) do not get rendered when exported as html
 ** types of list
 *** unnumbered type 1
 + org list
@@ -26,7 +26,8 @@
 
 ** Text formatting
 _underlined text_
-+strike-through-text+ 
++strike-through-text+
+ # why doesn't it appear as striked in emacs :?
 *bold-text*
 /Italic/
 ~code~
@@ -36,12 +37,13 @@ _underlined text_
 * Source Blocks 
 Type ~< s tab~ to add an empty source block
 #+BEGIN_SRC elisp
+; how to get this block's or entire export's background black?
   (defun hi-org ()
     (print "Hello org"))
 #+END_SRC
-Use ~' C-c~ to edit code in it's default language mode
-evaluate code with ~C-c C-c~
-
+Use ~' C-c~ to edit code in it's default language mode.
+Evaluate code with ~C-c C-c~
+Comments in org block are not exported when exported with org-html-export function
 
 ** Links
 The format is two square brackets inside a square bracket /without space/ =[ [my-awesome-link-here][text-to-show-here]]=
