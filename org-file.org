@@ -1,0 +1,48 @@
+* Levels of heading
+# regular text
+* h1
+** h2 
+*** h3 
+**** h4
+***** h5
+****** h6
+******* h7
+******** h8
+********* h9
+
+** types of list
+*** unnumbered type 1
++ org list
++ org in emacs
+*** unnumbered type 2
+- no number
+- 2nd list end
+*** numbered list 1
+1) text 1
+2) text 2
+*** numbered list 2
+1. text 1
+2. text 2
+
+** Text formatting
+_underlined text_
++strike-through-text+ 
+*bold-text*
+/Italic/
+~code~
+=verbatim/unformatted-text=
+
+
+* Source Blocks 
+Type ~< s tab~ to add an empty source block
+#+BEGIN_SRC elisp
+  (defun hi-org ()
+    (print "Hello org"))
+#+END_SRC
+Use ~' C-c~ to edit code in it's default language mode
+evaluate code with ~C-c C-c~
+
+
+** Links
+The format is two square brackets inside a square bracket /without space/ =[ [my-awesome-link-here][text-to-show-here]]=
+[[https://orgmode.org/worg/org-quotes.html][org-quotes]]
