@@ -9,7 +9,8 @@
 ******* h7 
 ******** h8 
 ********* h9 
-Org comments (start with # on a newline) do not get rendered when exported as html
+Org comments start with # on a newline and do not get rendered when exported as html
+
 ** types of list
 *** unnumbered type 1
 + org list
@@ -37,13 +38,12 @@ _underlined text_
 * Source Blocks 
 Type ~< s tab~ to add an empty source block
 #+BEGIN_SRC elisp
-; how to get this block's or entire export's background black?
+# how to get this block's or entire export's background-color to black?
   (defun hi-org ()
     (print "Hello org"))
 #+END_SRC
 Use ~' C-c~ to edit code in it's default language mode.
 Evaluate code with ~C-c C-c~
-Comments in org block are not exported when exported with org-html-export function
 
 ** Links
 The format is two square brackets inside a square bracket /without space/ =[ [my-awesome-link-here][text-to-show-here]]=
